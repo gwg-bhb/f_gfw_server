@@ -38,7 +38,7 @@ public class login extends HttpServlet {
                 //2 将token存到数据库中SiteToken
                 user.setToken(token);
                 //??????
-
+                userDao.inserttoken(user);
                 //3 将uuid存到cookie中，并且返回
                 Cookie cookie = new Cookie("mytoken", token);
                 response.addCookie(cookie);

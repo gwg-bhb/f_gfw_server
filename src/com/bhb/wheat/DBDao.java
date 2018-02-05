@@ -13,8 +13,6 @@ public class DBDao {
     //连接数据库
     public static Connection getConnection(){
 
-        if (null != connection)
-            return connection;
     try{
         Class.forName(DB_DRIVER);
     }catch(ClassNotFoundException e){
