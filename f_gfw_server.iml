@@ -3,6 +3,9 @@
   <component name="FacetManager">
     <facet type="web" name="Web">
       <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
+        </descriptors>
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
@@ -16,11 +19,102 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.4" level="application_server_libraries" />
-    <orderEntry type="module-library" scope="PROVIDED">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-5.1.45/mysql-connector-java-5.1.45-bin.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/sdk-java-23568229/taobao-sdk-java-auto_1455552377940-20180209.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Downloads/sdk-java-23568229/taobao-sdk-java-auto_1455552377940-20180209-source.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/fb9540ab56da59afa78d621caee13f37/Message/MessageTemp/4e266af2a69a1ed22cd94e0da079da28/File/javax.annotation.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/fb9540ab56da59afa78d621caee13f37/Message/MessageTemp/4e266af2a69a1ed22cd94e0da079da28/File/javax.ejb.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/fb9540ab56da59afa78d621caee13f37/Message/MessageTemp/4e266af2a69a1ed22cd94e0da079da28/File/javax.jms.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/fb9540ab56da59afa78d621caee13f37/Message/MessageTemp/4e266af2a69a1ed22cd94e0da079da28/File/javax.persistence.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/fb9540ab56da59afa78d621caee13f37/Message/MessageTemp/4e266af2a69a1ed22cd94e0da079da28/File/javax.resource.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/fb9540ab56da59afa78d621caee13f37/Message/MessageTemp/4e266af2a69a1ed22cd94e0da079da28/File/javax.servlet.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/fb9540ab56da59afa78d621caee13f37/Message/MessageTemp/4e266af2a69a1ed22cd94e0da079da28/File/javax.servlet.jsp.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/fb9540ab56da59afa78d621caee13f37/Message/MessageTemp/4e266af2a69a1ed22cd94e0da079da28/File/javax.servlet.jsp.jstl.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/fb9540ab56da59afa78d621caee13f37/Message/MessageTemp/4e266af2a69a1ed22cd94e0da079da28/File/javax.transaction.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

@@ -70,5 +70,62 @@ public class UserDao {
         }
         return;
     }
+
+    public boolean isExist_userName(String username){
+
+        SQL = "select * from users where name = ?";
+        Connection connection = null;
+        PreparedStatement pstmt = null;
+        boolean ret = false;
+
+        try {
+            connection = DBDao.getConnection();
+            pstmt = (PreparedStatement) connection.prepareStatement(SQL);
+            //这里的意思将用户名和密码填到SQL语句的问号处
+            pstmt.setString(1, username);
+            ResultSet rSet = (ResultSet) pstmt.executeQuery();//得到数据库的查询结果,一个数据集
+            //判断结果集是否有效
+            if(rSet.next()){
+                ret = true;
+            }
+            rSet.close();
+            pstmt.close();
+            connection.close();
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }finally{
+            DBDao.closeConnection(connection);
+        }
+        return ret;
+    }
+
+    public  boolean isExist_phonenum(String phoneNum){
+        SQL = "select * from users where mobile = ?";
+        Connection connection = null;
+        PreparedStatement pstmt = null;
+        boolean ret = false;
+
+        try{
+            connection = DBDao.getConnection();
+            pstmt = (PreparedStatement) connection.prepareStatement(SQL);
+            //这里的意思将用户名和密码填到SQL语句的问号处
+            pstmt.setString(1, phoneNum);
+            ResultSet rSet = (ResultSet) pstmt.executeQuery();//得到数据库的查询结果,一个数据集
+            //判断结果集是否有效
+            if(rSet.next()){
+                ret = true;
+            }
+            rSet.close();
+            pstmt.close();
+            connection.close();
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }finally{
+            DBDao.closeConnection(connection);
+        }
+        return ret;
+    }
 }
 

@@ -9,6 +9,8 @@ public class User {
 
     private String token;
 
+    private String authcode;
+
     public String getUsername(){
         return this.username;
     }
@@ -35,5 +37,12 @@ public class User {
     }
     public void setToken(String token){
         this.token = token;
+    }
+
+    public String getAuthcode() {
+        return this.authcode;
+    }
+    public  void setAuthcode(String authcode){
+        this.authcode = authcode;
     }
 }
