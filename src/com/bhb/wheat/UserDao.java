@@ -42,6 +42,38 @@ public class UserDao {
         return user;
     }
 
+    public boolean insertuserinfo(User usr){
+        SQL = "insert into users(name, password, pwd_p123, salt, mobile, registerTime) values(?, ?, ?, ?, ?, ?)";
+        Connection connection = null;
+        PreparedStatement pstmt = null;
+
+        String pwd_p123 = "0";
+
+        try {
+            connection = DBDao.getConnection();
+            pstmt = (PreparedStatement) connection.prepareStatement(SQL);
+            //这里的意思将用户名和密码填到SQL语句的问号处
+            pstmt.setString(1, usr.getUsername());
+            pstmt.setString(2, usr.getPassword());
+            pstmt.setString(3, pwd_p123);
+            pstmt.setString(4, usr.getSalt());
+            pstmt.setString(5, usr.getMobile());
+            pstmt.setString(6, user.getRegister_date());
+
+            pstmt.executeUpdate();
+
+            pstmt.close();
+            connection.close();
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }finally{
+            DBDao.closeConnection(connection);
+        }
+
+        return true;
+    }
+
     public void  inserttoken(User usr){
         SQL = "insert into sitetoken(token, username, created) values(?, ?, ?)";
         Connection connection = null;
