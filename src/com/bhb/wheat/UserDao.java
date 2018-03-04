@@ -21,7 +21,6 @@ public class UserDao {
             pstmt = (PreparedStatement) connection.prepareStatement(SQL);
             //这里的意思将用户名和密码填到SQL语句的问号处
             pstmt.setString(1, username);
-//            pstmt.setString(2, pwd_sha256);
             ResultSet rSet = (ResultSet) pstmt.executeQuery();//得到数据库的查询结果,一个数据集
             //判断结果集是否有效
             if(rSet.next()){
